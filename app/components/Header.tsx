@@ -18,16 +18,17 @@ export default function Header() {
       </div>
       <header className="border-b border-gray-200">
         <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-          <Image 
-            src={logoImage} 
-            alt="medimo_home_img" 
-            width={150} // 実際の表示サイズに合わせる
-            height={40} 
-            priority // ヘッダー画像など、最優先で読み込ませたい場合に指定
-          />
-
+          <Link href="/">
+            <Image 
+              src={logoImage} 
+              alt="medimo_home_img" 
+              width={150} // 実際の表示サイズに合わせる
+              height={40} 
+              priority // ヘッダー画像など、最優先で読み込ませたい場合に指定
+            />
+          </Link>
           <nav className="flex gap-6 text-sm">
-            <Link href="/" className="hover:text-gray-500">
+            <Link href="/about" className="hover:text-gray-500">
               medimoとは
             </Link>
             <Link href="/function" className="hover:text-gray-500">
