@@ -3,8 +3,8 @@
 // useEffectは、Client Componentでのみ利用できる機能
 import { useEffect, useState } from "react";
 
-// Homeという画面（コンポーネント）を定義
-export default function Home() {
+// ApiPageという画面（コンポーネント）を定義
+export default function ApiPage() {
   // FastAPIのデータを保存するためのステートを用意する（初期値は空文字 ""）
   const [message, setMessage] = useState("");
   // コンポーネントがマウントされたときだけ、FastAPIにGETリクエストを送る
