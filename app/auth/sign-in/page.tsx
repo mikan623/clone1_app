@@ -67,7 +67,7 @@ const Page: NextPage = () => {
                 name="username"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>ユーザー名</FormLabel>
+                    <FormLabel>ユーザー名を入力してください</FormLabel>
                     <FormControl>
                       <Input {...field} />
                     </FormControl>
